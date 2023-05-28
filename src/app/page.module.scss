@@ -1,0 +1,12 @@
+.question {
+  
+  padding: 20px;
+
+  > div {
+    cursor: pointer;
+  }
+}
+
+.answer--selected {
+  color: blue;
+}
