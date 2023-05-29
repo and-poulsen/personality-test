@@ -8,7 +8,6 @@ import { calculateTestScore } from '@/utils';
 
 const Questionaire = () => {
   const router = useRouter();
-  const [answers, setAnswers] = useState<number[]>([]);
   const [questions, setQuestions] = useState<Question[]>([]);
 
   useEffect(() => {
@@ -16,7 +15,6 @@ const Questionaire = () => {
       .then((response) => response.json())
       .then((data) => {
         setQuestions(data.questions)
-        setAnswers(new Array(data.questions.length).fill(-1))
       })
       .catch((error) => console.log(error));
   }, []);
