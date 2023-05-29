@@ -1,5 +1,5 @@
 # Personality Test
-[See demo here](https://personality-test-pi.vercel.app/test)
+[See demo here](https://personality-test-pi.vercel.app)
 
 This is a Next.js app with Typescript. It features a simple Personality Test that will gauge whether you're Introvert or Extrovert after a few questions.
 It has E2E tests with Cypress.
