@@ -48,7 +48,7 @@ const Questionaire = () => {
         </div>
       ))}
 
-      {questions.length && (
+      {questions.length > 0 && (
         <div>Questions answered: {questions.filter(q => q.userAnswer > -1).length} / {questions.length}</div>
       )}
     </main>
